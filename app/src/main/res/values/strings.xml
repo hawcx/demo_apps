@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="user_id_hint">User ID</string>
+    <string name="login_button_text">Login</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="biometric_prompt_title">Biometric Authentication</string>
+    <string name="biometric_prompt_subtitle">Log in using your biometric credential</string>
+    <string name="biometric_prompt_negative_button_text">Cancel</string>
+    <string name="show_time_logs">Show Time Logs</string>
+    <string name="sign_in_time_log">Sign In Time Log</string>
+    <string name="close">Close</string>
+</resources>
