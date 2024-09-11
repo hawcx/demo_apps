@@ -1,5 +1,9 @@
 package com.example.demo.activities;
 
+import static com.example.demo.helpers.Constants.KEY_IS_FIRST_RUN;
+import static com.example.demo.helpers.Constants.KEY_IS_LOGGED_IN;
+import static com.example.demo.helpers.Constants.PREFS_NAME;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,8 +14,6 @@ import com.example.demo.helpers.Constants;
 import com.hawcx.HawcxInitializer;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String PREFS_NAME = "prefs";
-    private static final String KEY_IS_LOGGED_IN = "isLoggedIn";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             startActivity(new Intent(this, LoginActivity.class));
         }
+
         finish();
     }
 

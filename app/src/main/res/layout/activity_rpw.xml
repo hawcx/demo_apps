@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -24,102 +25,200 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <EditText
-            android:id="@+id/email_input"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_container"
             android:layout_marginTop="16dp"
-            android:background="@drawable/input_background"
-            android:hint="Email ID"
-            android:inputType="textEmailAddress"
-            android:paddingHorizontal="16dp"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/darker_gray"
-            android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/header_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/error_text"
-            android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_background"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter correct Email address"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/email_input"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/submit_email_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/error_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter correct Email address"
-            android:textColor="@android:color/holo_red_light"
-            android:layout_marginTop="10dp"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/email_input"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/submit_button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:background="@drawable/button_background"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/error_text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <EditText
-            android:id="@+id/otp_input"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:id="@+id/otp_container"
             android:layout_marginTop="16dp"
-            android:background="@drawable/input_background"
-            android:hint="Enter OTP"
-            android:inputType="number"
-            android:paddingHorizontal="16dp"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/darker_gray"
-            android:textSize="16sp"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/submit_button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/header_text"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:id="@+id/otp_input"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_background"
+                android:hint="Enter OTP"
+                android:inputType="number"
+                android:paddingHorizontal="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/submit_otp_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Verify OTP"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/otp_input"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/information_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@id/submit_otp_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Information"
+                    android:textColor="#3498db"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* An OTP will be sent to the registered email." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/or_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Or"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/information_section"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toStartOf="@id/or_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/or_text"
+                app:layout_constraintBottom_toBottomOf="@id/or_text"
+                app:layout_constraintWidth_percent="0.45"/>
+
+            <View
+                android:id="@+id/right_line"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/or_text"
+                app:layout_constraintTop_toTopOf="@id/or_text"
+                app:layout_constraintBottom_toBottomOf="@id/or_text"
+                app:layout_constraintWidth_percent="0.45"/>
+
+            <Button
+                android:id="@+id/resend_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#0080F3"
+                app:cornerRadius="8dp"
+                android:text="Resend Code"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@id/another_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/or_text"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <Button
+                android:id="@+id/another_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#D9D9D9"
+                app:cornerRadius="8dp"
+                android:text="Another Account"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/resend_button"
+                app:layout_constraintTop_toBottomOf="@id/or_text"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ProgressBar
             android:id="@+id/progress_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/otp_input"
+            android:indeterminate="true"
+            android:indeterminateTint="#0080F3"
+            app:layout_constraintTop_toBottomOf="@id/header_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
-
-        <LinearLayout
-            android:id="@+id/information_section"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:orientation="vertical"
-            android:padding="10dp"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/progress_bar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Information"
-                android:textColor="#3498db"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="* An OTP will be sent to the registered email." />
-
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
