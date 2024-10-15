@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D739B99D2CBEE28400738DEC /* HawcxDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B99C2CBEE28400738DEC /* HawcxDemoApp.swift */; };
+		D739B99F2CBEE28400738DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B99E2CBEE28400738DEC /* ContentView.swift */; };
+		D739B9A12CBEE28600738DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D739B9A02CBEE28600738DEC /* Assets.xcassets */; };
+		D739B9A42CBEE28600738DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D739B9A32CBEE28600738DEC /* Preview Assets.xcassets */; };
+		D739B9D92CBEE2C000738DEC /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9AA2CBEE2C000738DEC /* LineView.swift */; };
+		D739B9DA2CBEE2C000738DEC /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9AB2CBEE2C000738DEC /* Spinner.swift */; };
+		D739B9DB2CBEE2C000738DEC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9AC2CBEE2C000738DEC /* Toast.swift */; };
+		D739B9DC2CBEE2C000738DEC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9AF2CBEE2C000738DEC /* MainViewModel.swift */; };
+		D739B9DD2CBEE2C000738DEC /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B12CBEE2C000738DEC /* DeviceListView.swift */; };
+		D739B9DE2CBEE2C000738DEC /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B22CBEE2C000738DEC /* DeviceRowView.swift */; };
+		D739B9DF2CBEE2C000738DEC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B32CBEE2C000738DEC /* HomeView.swift */; };
+		D739B9E02CBEE2C000738DEC /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B42CBEE2C000738DEC /* SessionDetailView.swift */; };
+		D739B9E12CBEE2C000738DEC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B72CBEE2C000738DEC /* LoginViewModel.swift */; };
+		D739B9E22CBEE2C000738DEC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9B92CBEE2C000738DEC /* LoginView.swift */; };
+		D739B9E32CBEE2C000738DEC /* ResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9BC2CBEE2C000738DEC /* ResetViewModel.swift */; };
+		D739B9E42CBEE2C000738DEC /* ResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9BE2CBEE2C000738DEC /* ResetView.swift */; };
+		D739B9E52CBEE2C000738DEC /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9C12CBEE2C000738DEC /* SignUp.swift */; };
+		D739B9E62CBEE2C000738DEC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9C32CBEE2C000738DEC /* SignUpViewModel.swift */; };
+		D739B9E72CBEE2C000738DEC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9C52CBEE2C000738DEC /* SignUpView.swift */; };
+		D739B9E82CBEE2C000738DEC /* WebLoginApproveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9C82CBEE2C000738DEC /* WebLoginApproveViewModel.swift */; };
+		D739B9E92CBEE2C000738DEC /* WebLoginManualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9C92CBEE2C000738DEC /* WebLoginManualViewModel.swift */; };
+		D739B9EA2CBEE2C000738DEC /* WebLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9CA2CBEE2C000738DEC /* WebLoginViewModel.swift */; };
+		D739B9EB2CBEE2C000738DEC /* WebLoginApprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9CC2CBEE2C000738DEC /* WebLoginApprove.swift */; };
+		D739B9EC2CBEE2C000738DEC /* WebLoginManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9CD2CBEE2C000738DEC /* WebLoginManual.swift */; };
+		D739B9ED2CBEE2C000738DEC /* WebLoginQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9CE2CBEE2C000738DEC /* WebLoginQRScanner.swift */; };
+		D739B9EE2CBEE2C000738DEC /* WebLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9CF2CBEE2C000738DEC /* WebLoginView.swift */; };
+		D739B9EF2CBEE2C000738DEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9D32CBEE2C000738DEC /* Constants.swift */; };
+		D739B9F02CBEE2C000738DEC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9D42CBEE2C000738DEC /* Helpers.swift */; };
+		D739B9F12CBEE2C000738DEC /* Hex2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9D52CBEE2C000738DEC /* Hex2String.swift */; };
+		D739B9F22CBEE2C000738DEC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739B9D72CBEE2C000738DEC /* AppState.swift */; };
+		D739B9F52CBEE38800738DEC /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D739B9F42CBEE38800738DEC /* CodeScanner */; };
+		D739B9F82CBEE3A300738DEC /* BiometricAuthentication in Frameworks */ = {isa = PBXBuildFile; productRef = D739B9F72CBEE3A300738DEC /* BiometricAuthentication */; };
+		D739B9FB2CBEE3BF00738DEC /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = D739B9FA2CBEE3BF00738DEC /* AlertToast */; };
+		D739BA6C2CBF18E600738DEC /* HawcxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D739BA6A2CBF185400738DEC /* HawcxFramework.framework */; };
+		D739BA6D2CBF18E600738DEC /* HawcxFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D739BA6A2CBF185400738DEC /* HawcxFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D739BA6E2CBF18E600738DEC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D739BA6D2CBF18E600738DEC /* HawcxFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D739B9992CBEE28400738DEC /* HawcxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawcxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D739B99C2CBEE28400738DEC /* HawcxDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawcxDemoApp.swift; sourceTree = "<group>"; };
+		D739B99E2CBEE28400738DEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D739B9A02CBEE28600738DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D739B9A32CBEE28600738DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D739B9AA2CBEE2C000738DEC /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		D739B9AB2CBEE2C000738DEC /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		D739B9AC2CBEE2C000738DEC /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		D739B9AF2CBEE2C000738DEC /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D739B9B12CBEE2C000738DEC /* DeviceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		D739B9B22CBEE2C000738DEC /* DeviceRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
+		D739B9B32CBEE2C000738DEC /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D739B9B42CBEE2C000738DEC /* SessionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		D739B9B72CBEE2C000738DEC /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D739B9B92CBEE2C000738DEC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D739B9BC2CBEE2C000738DEC /* ResetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetViewModel.swift; sourceTree = "<group>"; };
+		D739B9BE2CBEE2C000738DEC /* ResetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetView.swift; sourceTree = "<group>"; };
+		D739B9C12CBEE2C000738DEC /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		D739B9C32CBEE2C000738DEC /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		D739B9C52CBEE2C000738DEC /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D739B9C82CBEE2C000738DEC /* WebLoginApproveViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginApproveViewModel.swift; sourceTree = "<group>"; };
+		D739B9C92CBEE2C000738DEC /* WebLoginManualViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginManualViewModel.swift; sourceTree = "<group>"; };
+		D739B9CA2CBEE2C000738DEC /* WebLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginViewModel.swift; sourceTree = "<group>"; };
+		D739B9CC2CBEE2C000738DEC /* WebLoginApprove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginApprove.swift; sourceTree = "<group>"; };
+		D739B9CD2CBEE2C000738DEC /* WebLoginManual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginManual.swift; sourceTree = "<group>"; };
+		D739B9CE2CBEE2C000738DEC /* WebLoginQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginQRScanner.swift; sourceTree = "<group>"; };
+		D739B9CF2CBEE2C000738DEC /* WebLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLoginView.swift; sourceTree = "<group>"; };
+		D739B9D32CBEE2C000738DEC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D739B9D42CBEE2C000738DEC /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D739B9D52CBEE2C000738DEC /* Hex2String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hex2String.swift; sourceTree = "<group>"; };
+		D739B9D72CBEE2C000738DEC /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D739BA6A2CBF185400738DEC /* HawcxFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HawcxFramework.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/HawcxFramework-foyqipyddiqodwebrmzaglrxutht/Build/Products/Debug-iphonesimulator/HawcxFramework.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D739B9962CBEE28400738DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D739B9FB2CBEE3BF00738DEC /* AlertToast in Frameworks */,
+				D739BA6C2CBF18E600738DEC /* HawcxFramework.framework in Frameworks */,
+				D739B9F52CBEE38800738DEC /* CodeScanner in Frameworks */,
+				D739B9F82CBEE3A300738DEC /* BiometricAuthentication in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D739B9902CBEE28400738DEC = {
+			isa = PBXGroup;
+			children = (
+				D739B99B2CBEE28400738DEC /* HawcxDemo */,
+				D739B99A2CBEE28400738DEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D739B99A2CBEE28400738DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9992CBEE28400738DEC /* HawcxDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D739B99B2CBEE28400738DEC /* HawcxDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D739B99C2CBEE28400738DEC /* HawcxDemoApp.swift */,
+				D739B99E2CBEE28400738DEC /* ContentView.swift */,
+				D739B9D82CBEE2C000738DEC /* Code */,
+				D739B9A02CBEE28600738DEC /* Assets.xcassets */,
+				D739BA6A2CBF185400738DEC /* HawcxFramework.framework */,
+				D739B9A22CBEE28600738DEC /* Preview Content */,
+			);
+			path = HawcxDemo;
+			sourceTree = "<group>";
+		};
+		D739B9A22CBEE28600738DEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9A32CBEE28600738DEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D739B9AD2CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9AA2CBEE2C000738DEC /* LineView.swift */,
+				D739B9AB2CBEE2C000738DEC /* Spinner.swift */,
+				D739B9AC2CBEE2C000738DEC /* Toast.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9AE2CBEE2C000738DEC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9AD2CBEE2C000738DEC /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D739B9B02CBEE2C000738DEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9AF2CBEE2C000738DEC /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D739B9B52CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9B12CBEE2C000738DEC /* DeviceListView.swift */,
+				D739B9B22CBEE2C000738DEC /* DeviceRowView.swift */,
+				D739B9B32CBEE2C000738DEC /* HomeView.swift */,
+				D739B9B42CBEE2C000738DEC /* SessionDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9B62CBEE2C000738DEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9B02CBEE2C000738DEC /* ViewModel */,
+				D739B9B52CBEE2C000738DEC /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D739B9B82CBEE2C000738DEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9B72CBEE2C000738DEC /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D739B9BA2CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9B92CBEE2C000738DEC /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9BB2CBEE2C000738DEC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9B82CBEE2C000738DEC /* ViewModels */,
+				D739B9BA2CBEE2C000738DEC /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D739B9BD2CBEE2C000738DEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9BC2CBEE2C000738DEC /* ResetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D739B9BF2CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9BE2CBEE2C000738DEC /* ResetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9C02CBEE2C000738DEC /* Reset */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9BD2CBEE2C000738DEC /* ViewModel */,
+				D739B9BF2CBEE2C000738DEC /* Views */,
+			);
+			path = Reset;
+			sourceTree = "<group>";
+		};
+		D739B9C22CBEE2C000738DEC /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9C12CBEE2C000738DEC /* SignUp.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		D739B9C42CBEE2C000738DEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9C32CBEE2C000738DEC /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D739B9C62CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9C52CBEE2C000738DEC /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9C72CBEE2C000738DEC /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9C22CBEE2C000738DEC /* Actions */,
+				D739B9C42CBEE2C000738DEC /* ViewModels */,
+				D739B9C62CBEE2C000738DEC /* Views */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		D739B9CB2CBEE2C000738DEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9C82CBEE2C000738DEC /* WebLoginApproveViewModel.swift */,
+				D739B9C92CBEE2C000738DEC /* WebLoginManualViewModel.swift */,
+				D739B9CA2CBEE2C000738DEC /* WebLoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D739B9D02CBEE2C000738DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9CC2CBEE2C000738DEC /* WebLoginApprove.swift */,
+				D739B9CD2CBEE2C000738DEC /* WebLoginManual.swift */,
+				D739B9CE2CBEE2C000738DEC /* WebLoginQRScanner.swift */,
+				D739B9CF2CBEE2C000738DEC /* WebLoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D739B9D12CBEE2C000738DEC /* WebLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9CB2CBEE2C000738DEC /* ViewModels */,
+				D739B9D02CBEE2C000738DEC /* Views */,
+			);
+			path = WebLogin;
+			sourceTree = "<group>";
+		};
+		D739B9D22CBEE2C000738DEC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9AE2CBEE2C000738DEC /* Common */,
+				D739B9B62CBEE2C000738DEC /* Home */,
+				D739B9BB2CBEE2C000738DEC /* Login */,
+				D739B9C02CBEE2C000738DEC /* Reset */,
+				D739B9C72CBEE2C000738DEC /* Signup */,
+				D739B9D12CBEE2C000738DEC /* WebLogin */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D739B9D62CBEE2C000738DEC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9D32CBEE2C000738DEC /* Constants.swift */,
+				D739B9D42CBEE2C000738DEC /* Helpers.swift */,
+				D739B9D52CBEE2C000738DEC /* Hex2String.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D739B9D82CBEE2C000738DEC /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D739B9D22CBEE2C000738DEC /* Features */,
+				D739B9D62CBEE2C000738DEC /* Utilities */,
+				D739B9D72CBEE2C000738DEC /* AppState.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D739B9982CBEE28400738DEC /* HawcxDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D739B9A72CBEE28600738DEC /* Build configuration list for PBXNativeTarget "HawcxDemo" */;
+			buildPhases = (
+				D739B9952CBEE28400738DEC /* Sources */,
+				D739B9962CBEE28400738DEC /* Frameworks */,
+				D739B9972CBEE28400738DEC /* Resources */,
+				D739BA6E2CBF18E600738DEC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HawcxDemo;
+			packageProductDependencies = (
+				D739B9F42CBEE38800738DEC /* CodeScanner */,
+				D739B9F72CBEE3A300738DEC /* BiometricAuthentication */,
+				D739B9FA2CBEE3BF00738DEC /* AlertToast */,
+			);
+			productName = HawcxDemo;
+			productReference = D739B9992CBEE28400738DEC /* HawcxDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D739B9912CBEE28400738DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D739B9982CBEE28400738DEC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D739B9942CBEE28400738DEC /* Build configuration list for PBXProject "HawcxDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D739B9902CBEE28400738DEC;
+			packageReferences = (
+				D739B9F32CBEE38800738DEC /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				D739B9F62CBEE3A300738DEC /* XCRemoteSwiftPackageReference "BiometricAuthentication" */,
+				D739B9F92CBEE3BF00738DEC /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
+			productRefGroup = D739B99A2CBEE28400738DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D739B9982CBEE28400738DEC /* HawcxDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D739B9972CBEE28400738DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D739B9A42CBEE28600738DEC /* Preview Assets.xcassets in Resources */,
+				D739B9A12CBEE28600738DEC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D739B9952CBEE28400738DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D739B9EF2CBEE2C000738DEC /* Constants.swift in Sources */,
+				D739B9DF2CBEE2C000738DEC /* HomeView.swift in Sources */,
+				D739B9ED2CBEE2C000738DEC /* WebLoginQRScanner.swift in Sources */,
+				D739B99F2CBEE28400738DEC /* ContentView.swift in Sources */,
+				D739B9E62CBEE2C000738DEC /* SignUpViewModel.swift in Sources */,
+				D739B9E82CBEE2C000738DEC /* WebLoginApproveViewModel.swift in Sources */,
+				D739B9E32CBEE2C000738DEC /* ResetViewModel.swift in Sources */,
+				D739B9EA2CBEE2C000738DEC /* WebLoginViewModel.swift in Sources */,
+				D739B9EB2CBEE2C000738DEC /* WebLoginApprove.swift in Sources */,
+				D739B9E12CBEE2C000738DEC /* LoginViewModel.swift in Sources */,
+				D739B9EC2CBEE2C000738DEC /* WebLoginManual.swift in Sources */,
+				D739B9E52CBEE2C000738DEC /* SignUp.swift in Sources */,
+				D739B9DE2CBEE2C000738DEC /* DeviceRowView.swift in Sources */,
+				D739B99D2CBEE28400738DEC /* HawcxDemoApp.swift in Sources */,
+				D739B9E42CBEE2C000738DEC /* ResetView.swift in Sources */,
+				D739B9DD2CBEE2C000738DEC /* DeviceListView.swift in Sources */,
+				D739B9EE2CBEE2C000738DEC /* WebLoginView.swift in Sources */,
+				D739B9F12CBEE2C000738DEC /* Hex2String.swift in Sources */,
+				D739B9E22CBEE2C000738DEC /* LoginView.swift in Sources */,
+				D739B9DB2CBEE2C000738DEC /* Toast.swift in Sources */,
+				D739B9E72CBEE2C000738DEC /* SignUpView.swift in Sources */,
+				D739B9E92CBEE2C000738DEC /* WebLoginManualViewModel.swift in Sources */,
+				D739B9E02CBEE2C000738DEC /* SessionDetailView.swift in Sources */,
+				D739B9F22CBEE2C000738DEC /* AppState.swift in Sources */,
+				D739B9D92CBEE2C000738DEC /* LineView.swift in Sources */,
+				D739B9F02CBEE2C000738DEC /* Helpers.swift in Sources */,
+				D739B9DA2CBEE2C000738DEC /* Spinner.swift in Sources */,
+				D739B9DC2CBEE2C000738DEC /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D739B9A52CBEE28600738DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D739B9A62CBEE28600738DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D739B9A82CBEE28600738DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HawcxDemo",
+					"$(PROJECT_DIR)/HawcxDemo/Preview\\ Content",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D739B9A92CBEE28600738DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HawcxDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HawcxDemo",
+					"$(PROJECT_DIR)/HawcxDemo/Preview\\ Content",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hawcx.HawcxDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D739B9942CBEE28400738DEC /* Build configuration list for PBXProject "HawcxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D739B9A52CBEE28600738DEC /* Debug */,
+				D739B9A62CBEE28600738DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D739B9A72CBEE28600738DEC /* Build configuration list for PBXNativeTarget "HawcxDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D739B9A82CBEE28600738DEC /* Debug */,
+				D739B9A92CBEE28600738DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D739B9F32CBEE38800738DEC /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		D739B9F62CBEE3A300738DEC /* XCRemoteSwiftPackageReference "BiometricAuthentication" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rushisangani/BiometricAuthentication";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		D739B9F92CBEE3BF00738DEC /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D739B9F42CBEE38800738DEC /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D739B9F32CBEE38800738DEC /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		D739B9F72CBEE3A300738DEC /* BiometricAuthentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D739B9F62CBEE3A300738DEC /* XCRemoteSwiftPackageReference "BiometricAuthentication" */;
+			productName = BiometricAuthentication;
+		};
+		D739B9FA2CBEE3BF00738DEC /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D739B9F92CBEE3BF00738DEC /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D739B9912CBEE28400738DEC /* Project object */;
+}
